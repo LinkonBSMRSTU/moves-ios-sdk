@@ -133,7 +133,7 @@ static BOOL RPJSONValidatorShouldSuppressWarnings;
         } else if([requirementsValue isKindOfClass:[NSDictionary class]]) {
             [MVRPJSONValidator validateValuesFrom:jsonValue
                                withRequirements:requirementsValue
-                                          error:error
+                                            error:error
                                        userInfo:userInfo];
         } else {
             [MVRPJSONValidator log:[NSString stringWithFormat:@"RPJSONValidator Error: requirements parameter isn't valid. Value (%@) isn't an RPValidatorPredicate or NSDictionary or NSNumber. Returning NO", requirementsValue]];

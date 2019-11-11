@@ -73,11 +73,6 @@
     [self.webView loadRequest:[NSURLRequest requestWithURL:self.authorizationURL]];
 }
 
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
-{
-    return YES;
-}
-
 - (void)cancel:(id)sender
 {
     [self.webView stopLoading];
